@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>URL Details</h1>
+<h2>Short URL:</h2>
+<p id="shortUrl">{{ short_url}}</p>
+<h2>Original URL:</h2>
+<p id="originalUrl">{{ original_url}}</p>
+
+<div class="jumbotron">
+    <center>
+        <h3>Click On Here to visit the link</h3>
+        <a href="/{{short_url}}"><button type="button"
+                class="btn btn-primary">Here</button></a>
+    </center>
+</div>
+{% endblock content %}
+
+

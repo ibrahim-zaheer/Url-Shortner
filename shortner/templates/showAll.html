@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<html>
+<head>
+    <!-- Add your head content here -->
+</head>
+<body>
+    {% for obj in objs %}
+    <p>{{ obj.short_url}}</p>
+        <p>{{ obj.original_url }}</p>
+        <p><a href="{{obj.original_url}}">Click me</a></p>
+        <!-- Add other fields as needed -->
+    {% endfor %}
+</body>
+</html>
+
+
+
+{% endblock content %}
